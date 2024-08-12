@@ -6,6 +6,7 @@ Suite Setup                   Override Variable
 Test Setup                   Setup
 Test Teardown                Teardown
 Resource                      ${RENODEKEYWORDS}
+Library         OperatingSystem
 
 *** Variables ***
 ${SCRIPT}                     ${CURDIR}/test.resc
@@ -21,6 +22,14 @@ Override Variable
     Set Global Variable        ${PORT_NUMBER}               9999
     Set Global Variable        ${SKIP_RUNNING_SERVER}       False
     Log    ${RENODEKEYWORDS}
+    # /home/runner/work/_temp/renode-latest/renode-run.download/tests/renode-keywords.robot
+    # /home/runner/work/_temp/renode-latest/renode-run.download/Renode.exe
+    # /home/runner/work/_temp/renode-stable/renode-run.download/mono-portable/renode-1.15.1+20240812git11f581187/renode
+    ${path}    ${file}    Split Path    ${RENODEKEYWORDS}
+    Log    ${path}
+
+    Set Global Variable        ${DIRECTORY}            /home/runner/work/_temp/renode-stable/renode-run.download/mono-portable/renode-1.15.1+20240812git11f581187/
+    Set Global Variable        ${BINARY_NAME}          renode
 
 
 Stuff
