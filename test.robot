@@ -20,6 +20,7 @@ Load Script
 Override Variable
     Set Global Variable        ${PORT_NUMBER}               9999
     Set Global Variable        ${SKIP_RUNNING_SERVER}       False
+    Log    ${RENODEKEYWORDS}
 
 
 Stuff
