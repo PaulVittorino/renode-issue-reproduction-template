@@ -17,103 +17,131 @@ Load Script
     Execute Script            ${SCRIPT}
     Create Terminal Tester    ${UART}
 
+Stuff
+    Load Script
+    Start Emulation
+    Wait For Prompt On Uart     uart:~$
+    Write Line To Uart
+    Wait For Prompt On Uart     uart:~$
+    Write Line To Uart          demo ping
+    Wait For Line On Uart       pong
 
 *** Test Cases ***
 One
-    Load Script
-    Start Emulation
-    Wait For Prompt On Uart     uart:~$
-    Write Line To Uart
-    Wait For Prompt On Uart     uart:~$
-    Write Line To Uart          demo ping
-    Wait For Line On Uart       pong
+    Stuff
 
 Two
-    Load Script
-    Start Emulation
-    Wait For Prompt On Uart     uart:~$
-    Write Line To Uart
-    Wait For Prompt On Uart     uart:~$
-    Write Line To Uart          demo ping
-    Wait For Line On Uart       pong
+    Stuff
 
 Three
-    Load Script
-    Start Emulation
-    Wait For Prompt On Uart     uart:~$
-    Write Line To Uart
-    Wait For Prompt On Uart     uart:~$
-    Write Line To Uart          demo ping
-    Wait For Line On Uart       pong
+    Stuff
 
 Four
-    Load Script
-    Start Emulation
-    Wait For Prompt On Uart     uart:~$
-    Write Line To Uart
-    Wait For Prompt On Uart     uart:~$
-    Write Line To Uart          demo ping
-    Wait For Line On Uart       pong
+    Stuff
 
 Five
-    Load Script
-    Start Emulation
-    Wait For Prompt On Uart     uart:~$
-    Write Line To Uart
-    Wait For Prompt On Uart     uart:~$
-    Write Line To Uart          demo ping
-    Wait For Line On Uart       pong
+    Stuff
 
 Six
-    Load Script
-    Start Emulation
-    Wait For Prompt On Uart     uart:~$
-    Write Line To Uart
-    Wait For Prompt On Uart     uart:~$
-    Write Line To Uart          demo ping
-    Wait For Line On Uart       pong
+    Stuff
 
 Seven
-    Load Script
-    Start Emulation
-    Wait For Prompt On Uart     uart:~$
-    Write Line To Uart
-    Wait For Prompt On Uart     uart:~$
-    Write Line To Uart          demo ping
-    Wait For Line On Uart       pong
+    Stuff
 
 Eight
-    Load Script
-    Start Emulation
-    Wait For Prompt On Uart     uart:~$
-    Write Line To Uart
-    Wait For Prompt On Uart     uart:~$
-    Write Line To Uart          demo ping
-    Wait For Line On Uart       pong
-
+    Stuff
 Nine
-    Load Script
-    Start Emulation
-    Wait For Prompt On Uart     uart:~$
-    Write Line To Uart
-    Wait For Prompt On Uart     uart:~$
-    Write Line To Uart          demo ping
-    Wait For Line On Uart       pong
+    Stuff
 
 Ten
-    Load Script
-    Start Emulation
-    Wait For Prompt On Uart     uart:~$
-    Write Line To Uart
-    Wait For Prompt On Uart     uart:~$
-    Write Line To Uart          demo ping
-    Wait For Line On Uart       pong
+    Stuff
 
 Eleven
-    Load Script
-    Start Emulation
-    Wait For Prompt On Uart     uart:~$
-    Write Line To Uart
-    Wait For Prompt On Uart     uart:~$
-    Write Line To Uart          demo ping
-    Wait For Line On Uart       pong
+    Stuff
+
+Twelve
+    Stuff
+
+Thirteen
+    Stuff
+
+Fourteen
+    Stuff
+
+Fifteen
+    Stuff
+
+Sixteen
+    Stuff
+
+Seventeen
+    Stuff
+
+Eighteen
+    Stuff
+
+Nineteen
+    Stuff
+
+Twenty
+    Stuff
+
+TwentyOne
+    Stuff
+
+TwentyTwo
+    Stuff
+
+TwentyThree
+    Stuff
+
+TwentyFour
+    Stuff
+
+TwentyFive
+    Stuff
+
+TwentySix
+    Stuff
+
+TwentySeven
+    Stuff
+
+TwentyEight
+    Stuff
+
+TwentyNine
+    Stuff
+
+Thirty
+    Stuff
+
+ThirtyOne
+    Stuff
+
+ThirtyTwo
+    Stuff
+
+ThirtyThree
+    Stuff
+
+ThirtyFour
+    Stuff
+
+ThirtyFive
+    Stuff
+
+ThirtySix
+    Stuff
+
+ThirtySeven
+    Stuff
+
+ThirtyEight
+    Stuff
+
+ThirtyNine
+    Stuff
+
+Forty
+    Stuff
