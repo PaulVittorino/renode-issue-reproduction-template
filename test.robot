@@ -1,8 +1,8 @@
 *** Settings ***
-#Suite Setup                   Setup
-#Suite Teardown                Teardown
-Test Setup                    Setup
-Test Teardown                 Teardown
+Suite Setup                   Setup
+Suite Teardown                Teardown
+Test Setup                    Reset Emulation
+Test Teardown                 Test Teardown
 Resource                      ${RENODEKEYWORDS}
 
 *** Variables ***
@@ -17,17 +17,7 @@ Load Script
 
 
 *** Test Cases ***
-Should Run Test Case
-    Load Script
-    Start Emulation
-    Wait For Prompt On Uart     uart:~$
-    Write Line To Uart
-    Wait For Prompt On Uart     uart:~$
-    Write Line To Uart          demo ping
-    Wait For Line On Uart       pong
-    Set Global Variable         ${SKIP_RUNNING_SERVER}    ${False}
-
-2nd test case
+One
     Load Script
     Start Emulation
     Wait For Prompt On Uart     uart:~$
@@ -36,7 +26,88 @@ Should Run Test Case
     Write Line To Uart          demo ping
     Wait For Line On Uart       pong
 
-3rd test case
+Two
+    Load Script
+    Start Emulation
+    Wait For Prompt On Uart     uart:~$
+    Write Line To Uart
+    Wait For Prompt On Uart     uart:~$
+    Write Line To Uart          demo ping
+    Wait For Line On Uart       pong
+
+Three
+    Load Script
+    Start Emulation
+    Wait For Prompt On Uart     uart:~$
+    Write Line To Uart
+    Wait For Prompt On Uart     uart:~$
+    Write Line To Uart          demo ping
+    Wait For Line On Uart       pong
+
+Four
+    Load Script
+    Start Emulation
+    Wait For Prompt On Uart     uart:~$
+    Write Line To Uart
+    Wait For Prompt On Uart     uart:~$
+    Write Line To Uart          demo ping
+    Wait For Line On Uart       pong
+
+Five
+    Load Script
+    Start Emulation
+    Wait For Prompt On Uart     uart:~$
+    Write Line To Uart
+    Wait For Prompt On Uart     uart:~$
+    Write Line To Uart          demo ping
+    Wait For Line On Uart       pong
+
+Six
+    Load Script
+    Start Emulation
+    Wait For Prompt On Uart     uart:~$
+    Write Line To Uart
+    Wait For Prompt On Uart     uart:~$
+    Write Line To Uart          demo ping
+    Wait For Line On Uart       pong
+
+Seven
+    Load Script
+    Start Emulation
+    Wait For Prompt On Uart     uart:~$
+    Write Line To Uart
+    Wait For Prompt On Uart     uart:~$
+    Write Line To Uart          demo ping
+    Wait For Line On Uart       pong
+
+Eight
+    Load Script
+    Start Emulation
+    Wait For Prompt On Uart     uart:~$
+    Write Line To Uart
+    Wait For Prompt On Uart     uart:~$
+    Write Line To Uart          demo ping
+    Wait For Line On Uart       pong
+
+Nine
+    Load Script
+    Start Emulation
+    Wait For Prompt On Uart     uart:~$
+    Write Line To Uart
+    Wait For Prompt On Uart     uart:~$
+    Write Line To Uart          demo ping
+    Wait For Line On Uart       pong
+
+Ten
+    Load Script
+    Start Emulation
+    Wait For Prompt On Uart     uart:~$
+    Write Line To Uart
+    Wait For Prompt On Uart     uart:~$
+    Write Line To Uart          demo ping
+    Wait For Line On Uart       pong
+
+Eleven
     Load Script
     Start Emulation
     Wait For Prompt On Uart     uart:~$
