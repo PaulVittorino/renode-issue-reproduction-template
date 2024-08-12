@@ -1,8 +1,10 @@
 *** Settings ***
-Suite Setup                   Setup
-Suite Teardown                Teardown
-Test Setup                    Reset Emulation
-Test Teardown                 Test Teardown
+# Suite Setup                   Setup
+# Suite Teardown                Teardown
+# Test Setup                    Reset Emulation
+# Test Teardown                 Test Teardown
+Test Setup                   Setup
+Test Teardown                Teardown
 Resource                      ${RENODEKEYWORDS}
 
 *** Variables ***
