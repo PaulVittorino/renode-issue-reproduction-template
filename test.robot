@@ -27,6 +27,7 @@ One
     Wait For Prompt On Uart     uart:~$
     Write Line To Uart          demo ping
     Wait For Line On Uart       pong
+    Set Global Variable         ${SKIP_RUNNING_SERVER}    ${False}
 
 Two
     Load Script
