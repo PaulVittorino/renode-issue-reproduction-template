@@ -1,8 +1,10 @@
 *** Settings ***
-Suite Setup                   Setup
-Suite Teardown                Teardown
-Test Setup                    Reset Emulation
-Test Teardown                 Test Teardown
+Suite Setup                   Override Variable
+# Suite Teardown                Teardown
+# Test Setup                    Reset Emulation
+# Test Teardown                 Test Teardown
+Test Setup                   Setup
+Test Teardown                Teardown
 Resource                      ${RENODEKEYWORDS}
 
 *** Variables ***
@@ -14,6 +16,11 @@ ${UART}                       sysbus.uart
 Load Script
     Execute Script            ${SCRIPT}
     Create Terminal Tester    ${UART}
+
+Override Variable
+    Set Global Variable        ${PORT_NUMBER}               9999
+    Set Global Variable        ${SKIP_RUNNING_SERVER}       False
+
 
 Stuff
     Load Script
