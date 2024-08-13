@@ -29,8 +29,8 @@ Override Variable
     Log    ${tests_path}
     @{items} =    List Directory    ${tests_path}${/}..${/}
 
-    Set Global Variable        ${DIRECTORY}            ${tests_path}${/}..${/}
-    Set Global Variable        ${BINARY_NAME}          renode
+    # Set Global Variable        ${DIRECTORY}            ${tests_path}${/}..${/}
+    # Set Global Variable        ${BINARY_NAME}          renode
 
 
 Stuff
